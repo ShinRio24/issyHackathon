@@ -74,3 +74,7 @@ def getCost():
     final.sort(key=lambda final: final[2])
     return final
 
+if __name__ == '__main__':
+    print(getCost())
+    print(getSpeed())
+

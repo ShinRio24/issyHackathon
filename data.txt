@@ -1,2 +1,4 @@
 unleaded*4831^unleaded*4958;157 NE Gilman Blvd, Issaquah, WA 98027
-UNLEADED*1498^PLUS*1651^PREMIUM*1798^DIESEL #2*1358;228 Front St N, Issaquah, WA 98027
+diesel*365^diesel*377^diesel*9^diesel*10;24 NW Holly St Issaquah, Washingtondiesel*365^diesel*377^diesel*9^diesel*10;30375 SE High Point Way Issaquah, Washington
+diesel*3138^diesel*3493^diesel*3198^diesel*3558;1479 NW Sammamish Rd Issaquah, Washington
+diesel*1498^diesel*1651^diesel*1798^diesel*1358;30375 SE High Point Way Issaquah, Washington

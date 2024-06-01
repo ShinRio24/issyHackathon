@@ -12,10 +12,10 @@ import numpy as np
 
 
 #debug mode
-debug = False
+debug = True
 #image path
 image_path = "gas2.png"
-gpsLoc = "228 Front St N, Issaquah, WA 98027"
+gpsLoc = "30375 SE High Point Way Issaquah, Washington"
 
 #read image
 img = cv2.imread(image_path)
@@ -39,20 +39,14 @@ for t_, t in enumerate(text_):
         #prints all of the found text and adds it to array
         saves.append([text,top_left[0],top_left[1]])
 
-#only to debug (prints a piccture of the image with all identified text)
-if debug:
-    plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-    plt.show()
-
 #this to pair prices with costs, (this could be done better)
 cats=[]
 a=""
 for y in saves:
     x=y[0]
     if x.isdigit():
-        if a!="":
-            cats.append(a + "*"+x)
-            a=''
+        #if a!="":
+        cats.append("diesel" + "*"+ x)
     else:
         a=x
 
@@ -77,3 +71,7 @@ with open("data.txt", "w") as file1:
     file1.writelines(tot)
 
 
+#only to debug (prints a piccture of the image with all identified text)
+if debug:
+    plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+    plt.show()
