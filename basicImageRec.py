@@ -1,42 +1,50 @@
+#READ ME
+#this file is for inputting image data into the system
+#this is where the image recognitionhappens
+#
+#
+
+#import libraries
 import cv2
 import easyocr
 import matplotlib.pyplot as plt
 import numpy as np
 
+
+#debug mode
 debug = False
-# read image
+#image path
 image_path = "gas2.png"
 gpsLoc = "228 Front St N, Issaquah, WA 98027"
 
+#read image
 img = cv2.imread(image_path)
-
-# instance text detector
+#this computes faster on gpu but most laptops dont come with gpu
 reader = easyocr.Reader(['en'], gpu=False)
-
-# detect text on image
 text_ = reader.readtext(img)
 
+#this number should be adjusted based on image (didnt have time for that)
 threshold = 0.1
-# draw bbox and text
 
+
+#identify all of the text
 saves = []
 for t_, t in enumerate(text_):
-
     bbox, text, score = t
-
     if score > threshold:
-        # Extract the top-left and bottom-right corners
         top_left = tuple(map(int, bbox[0]))
         bottom_right = tuple(map(int, bbox[2]))
         if debug: cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 5);cv2.putText(img, text, (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_COMPLEX, 0.65, (255, 0, 0), 2)
         print(text,top_left[0],top_left[1])
+        #prints all of the found text and adds it to array
         saves.append([text,top_left[0],top_left[1]])
 
+#only to debug (prints a piccture of the image with all identified text)
 if debug:
     plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
     plt.show()
 
-
+#this to pair prices with costs, (this could be done better)
 cats=[]
 a=""
 for y in saves:
@@ -50,7 +58,8 @@ for y in saves:
 
 print(cats)
 
-
+#outpuut findings to file (using special fcharacters to
+#between different items to differentiate between different types of data)
 tot=[]
 file = open('data.txt', 'r')
 while True:
