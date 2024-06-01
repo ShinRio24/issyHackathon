@@ -14,7 +14,7 @@ import numpy as np
 #debug mode
 debug = True
 #image path
-image_path = "gas2.png"
+image_path = "gas1.png"
 gpsLoc = "30375 SE High Point Way Issaquah, Washington"
 
 #read image
