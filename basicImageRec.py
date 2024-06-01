@@ -1,57 +1,71 @@
-# Import required packages
 import cv2
-import pytesseract
-import subprocess
- 
-# Mention the installed location of Tesseract-OCR in your system
-pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
- 
-# Read image from which text needs to be extracted
-img = cv2.imread("gas3.png")
+import easyocr
+import matplotlib.pyplot as plt
+import numpy as np
 
- 
-# Preprocessing the image starts
- 
-# Convert the image to gray scale
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
- 
-# Performing OTSU threshold
-ret, thresh1 = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_BINARY_INV)
- 
-# Specify structure shape and kernel size. 
-# Kernel size increases or decreases the area 
-# of the rectangle to be detected.
-# A smaller value like (10, 10) will detect 
-# each word instead of a sentence.
-rect_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (18, 18))
- 
-# Applying dilation on the threshold image
-dilation = cv2.dilate(thresh1, rect_kernel, iterations = 1)
- 
-# Finding contours
-contours, hierarchy = cv2.findContours(dilation, cv2.RETR_EXTERNAL, 
-                                                 cv2.CHAIN_APPROX_NONE)
- 
-# Creating a copy of image
-im2 = img.copy()
+debug = False
+# read image
+image_path = "gas2.png"
+gpsLoc = "228 Front St N, Issaquah, WA 98027"
 
- 
-# Looping through the identified contours
-# Then rectangular part is cropped and passed on
-# to pytesseract for extracting text from it
-# Extracted text is then written into the text file
-for cnt in contours:
-    x, y, w, h = cv2.boundingRect(cnt)
-     
-    # Drawing a rectangle on copied image
-    rect = cv2.rectangle(im2, (x, y), (x + w, y + h), (0, 255, 0), 2)
-     
-    # Cropping the text block for giving input to OCR
-    cropped = im2[y:y + h, x:x + w]
-     
-    # Open the file in append mode
-     
-    # Apply OCR on the cropped image
-    text = pytesseract.image_to_string(cropped)
-     
-    print(text)
+img = cv2.imread(image_path)
+
+# instance text detector
+reader = easyocr.Reader(['en'], gpu=False)
+
+# detect text on image
+text_ = reader.readtext(img)
+
+threshold = 0.1
+# draw bbox and text
+
+saves = []
+for t_, t in enumerate(text_):
+
+    bbox, text, score = t
+
+    if score > threshold:
+        # Extract the top-left and bottom-right corners
+        top_left = tuple(map(int, bbox[0]))
+        bottom_right = tuple(map(int, bbox[2]))
+        if debug: cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 5);cv2.putText(img, text, (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_COMPLEX, 0.65, (255, 0, 0), 2)
+        print(text,top_left[0],top_left[1])
+        saves.append([text,top_left[0],top_left[1]])
+
+if debug:
+    plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+
+cats=[]
+a=""
+for y in saves:
+    x=y[0]
+    if x.isdigit():
+        if a!="":
+            cats.append(a + "*"+x)
+            a=''
+    else:
+        a=x
+
+print(cats)
+
+
+tot=[]
+file = open('data.txt', 'r')
+while True:
+    line = file.readline()
+    if not line:
+        break
+    tot.append(line)
+
+tem = '^'.join(cats)
+tem= tem + ';'+gpsLoc+"\n"
+if tem not in tot:
+    tot.append(tem)
+
+with open("data.txt", "w") as file1:
+
+    file1.writelines(tot)
+
+
