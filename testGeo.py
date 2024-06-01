@@ -2,7 +2,7 @@
 import googlemaps
   
 # Requires API key
-gmaps = googlemaps.Client(key='AIzaSyD2p98heOeXL-5zigusil-niJ5Z-Rmc43Y')
+gmaps = googlemaps.Client(key='apikey')
   
 start = 'renton'
 dest ='issaquah'
