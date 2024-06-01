@@ -58,8 +58,7 @@ for y in saves:
 
 print(cats)
 
-#outpuut findings to file (using special fcharacters to
-#between different items to differentiate between different types of data)
+#output findings to file (using special fcharacters between different items to differentiate between different types of data)
 tot=[]
 file = open('data.txt', 'r')
 while True:
