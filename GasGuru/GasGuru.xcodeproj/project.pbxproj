@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6486614C2C0B982E00A9ECD1 /* GasGuruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6486614B2C0B982E00A9ECD1 /* GasGuruApp.swift */; };
+		6486614E2C0B982E00A9ECD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6486614D2C0B982E00A9ECD1 /* ContentView.swift */; };
+		648661502C0B983100A9ECD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6486614F2C0B983100A9ECD1 /* Assets.xcassets */; };
+		648661542C0B983100A9ECD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648661532C0B983100A9ECD1 /* Preview Assets.xcassets */; };
+		6486615E2C0B983100A9ECD1 /* GasGuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6486615D2C0B983100A9ECD1 /* GasGuruTests.swift */; };
+		648661682C0B983100A9ECD1 /* GasGuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648661672C0B983100A9ECD1 /* GasGuruUITests.swift */; };
+		6486616A2C0B983100A9ECD1 /* GasGuruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648661692C0B983100A9ECD1 /* GasGuruUITestsLaunchTests.swift */; };
+		64A3AECD2C0BAEFA00CA754B /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 64A3AECC2C0BAEFA00CA754B /* PythonKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6486615A2C0B983100A9ECD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 648661402C0B982E00A9ECD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 648661472C0B982E00A9ECD1;
+			remoteInfo = GasGuru;
+		};
+		648661642C0B983100A9ECD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 648661402C0B982E00A9ECD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 648661472C0B982E00A9ECD1;
+			remoteInfo = GasGuru;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		648661482C0B982E00A9ECD1 /* GasGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6486614B2C0B982E00A9ECD1 /* GasGuruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasGuruApp.swift; sourceTree = "<group>"; };
+		6486614D2C0B982E00A9ECD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6486614F2C0B983100A9ECD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		648661512C0B983100A9ECD1 /* GasGuru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GasGuru.entitlements; sourceTree = "<group>"; };
+		648661532C0B983100A9ECD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		648661592C0B983100A9ECD1 /* GasGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6486615D2C0B983100A9ECD1 /* GasGuruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasGuruTests.swift; sourceTree = "<group>"; };
+		648661632C0B983100A9ECD1 /* GasGuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasGuruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		648661672C0B983100A9ECD1 /* GasGuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasGuruUITests.swift; sourceTree = "<group>"; };
+		648661692C0B983100A9ECD1 /* GasGuruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasGuruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		648661452C0B982E00A9ECD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A3AECD2C0BAEFA00CA754B /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648661562C0B983100A9ECD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648661602C0B983100A9ECD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6486613F2C0B982E00A9ECD1 = {
+			isa = PBXGroup;
+			children = (
+				6486614A2C0B982E00A9ECD1 /* GasGuru */,
+				6486615C2C0B983100A9ECD1 /* GasGuruTests */,
+				648661662C0B983100A9ECD1 /* GasGuruUITests */,
+				648661492C0B982E00A9ECD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		648661492C0B982E00A9ECD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648661482C0B982E00A9ECD1 /* GasGuru.app */,
+				648661592C0B983100A9ECD1 /* GasGuruTests.xctest */,
+				648661632C0B983100A9ECD1 /* GasGuruUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6486614A2C0B982E00A9ECD1 /* GasGuru */ = {
+			isa = PBXGroup;
+			children = (
+				6486614B2C0B982E00A9ECD1 /* GasGuruApp.swift */,
+				6486614D2C0B982E00A9ECD1 /* ContentView.swift */,
+				6486614F2C0B983100A9ECD1 /* Assets.xcassets */,
+				648661512C0B983100A9ECD1 /* GasGuru.entitlements */,
+				648661522C0B983100A9ECD1 /* Preview Content */,
+			);
+			path = GasGuru;
+			sourceTree = "<group>";
+		};
+		648661522C0B983100A9ECD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				648661532C0B983100A9ECD1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6486615C2C0B983100A9ECD1 /* GasGuruTests */ = {
+			isa = PBXGroup;
+			children = (
+				6486615D2C0B983100A9ECD1 /* GasGuruTests.swift */,
+			);
+			path = GasGuruTests;
+			sourceTree = "<group>";
+		};
+		648661662C0B983100A9ECD1 /* GasGuruUITests */ = {
+			isa = PBXGroup;
+			children = (
+				648661672C0B983100A9ECD1 /* GasGuruUITests.swift */,
+				648661692C0B983100A9ECD1 /* GasGuruUITestsLaunchTests.swift */,
+			);
+			path = GasGuruUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		648661472C0B982E00A9ECD1 /* GasGuru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6486616D2C0B983100A9ECD1 /* Build configuration list for PBXNativeTarget "GasGuru" */;
+			buildPhases = (
+				648661442C0B982E00A9ECD1 /* Sources */,
+				648661452C0B982E00A9ECD1 /* Frameworks */,
+				648661462C0B982E00A9ECD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GasGuru;
+			packageProductDependencies = (
+				64A3AECC2C0BAEFA00CA754B /* PythonKit */,
+			);
+			productName = GasGuru;
+			productReference = 648661482C0B982E00A9ECD1 /* GasGuru.app */;
+			productType = "com.apple.product-type.application";
+		};
+		648661582C0B983100A9ECD1 /* GasGuruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648661702C0B983100A9ECD1 /* Build configuration list for PBXNativeTarget "GasGuruTests" */;
+			buildPhases = (
+				648661552C0B983100A9ECD1 /* Sources */,
+				648661562C0B983100A9ECD1 /* Frameworks */,
+				648661572C0B983100A9ECD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6486615B2C0B983100A9ECD1 /* PBXTargetDependency */,
+			);
+			name = GasGuruTests;
+			productName = GasGuruTests;
+			productReference = 648661592C0B983100A9ECD1 /* GasGuruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		648661622C0B983100A9ECD1 /* GasGuruUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648661732C0B983100A9ECD1 /* Build configuration list for PBXNativeTarget "GasGuruUITests" */;
+			buildPhases = (
+				6486615F2C0B983100A9ECD1 /* Sources */,
+				648661602C0B983100A9ECD1 /* Frameworks */,
+				648661612C0B983100A9ECD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				648661652C0B983100A9ECD1 /* PBXTargetDependency */,
+			);
+			name = GasGuruUITests;
+			productName = GasGuruUITests;
+			productReference = 648661632C0B983100A9ECD1 /* GasGuruUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		648661402C0B982E00A9ECD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					648661472C0B982E00A9ECD1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					648661582C0B983100A9ECD1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 648661472C0B982E00A9ECD1;
+					};
+					648661622C0B983100A9ECD1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 648661472C0B982E00A9ECD1;
+					};
+				};
+			};
+			buildConfigurationList = 648661432C0B982E00A9ECD1 /* Build configuration list for PBXProject "GasGuru" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6486613F2C0B982E00A9ECD1;
+			packageReferences = (
+				64A3AEC72C0BAB9600CA754B /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = 648661492C0B982E00A9ECD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				648661472C0B982E00A9ECD1 /* GasGuru */,
+				648661582C0B983100A9ECD1 /* GasGuruTests */,
+				648661622C0B983100A9ECD1 /* GasGuruUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		648661462C0B982E00A9ECD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648661542C0B983100A9ECD1 /* Preview Assets.xcassets in Resources */,
+				648661502C0B983100A9ECD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648661572C0B983100A9ECD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648661612C0B983100A9ECD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		648661442C0B982E00A9ECD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6486614E2C0B982E00A9ECD1 /* ContentView.swift in Sources */,
+				6486614C2C0B982E00A9ECD1 /* GasGuruApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648661552C0B983100A9ECD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6486615E2C0B983100A9ECD1 /* GasGuruTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6486615F2C0B983100A9ECD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648661682C0B983100A9ECD1 /* GasGuruUITests.swift in Sources */,
+				6486616A2C0B983100A9ECD1 /* GasGuruUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6486615B2C0B983100A9ECD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 648661472C0B982E00A9ECD1 /* GasGuru */;
+			targetProxy = 6486615A2C0B983100A9ECD1 /* PBXContainerItemProxy */;
+		};
+		648661652C0B983100A9ECD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 648661472C0B982E00A9ECD1 /* GasGuru */;
+			targetProxy = 648661642C0B983100A9ECD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6486616B2C0B983100A9ECD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6486616C2C0B983100A9ECD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6486616E2C0B983100A9ECD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GasGuru/GasGuru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GasGuru/Preview Content\"";
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GasSolutions.GasGuru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6486616F2C0B983100A9ECD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GasGuru/GasGuru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GasGuru/Preview Content\"";
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GasSolutions.GasGuru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		648661712C0B983100A9ECD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GasSolutions.GasGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GasGuru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GasGuru";
+			};
+			name = Debug;
+		};
+		648661722C0B983100A9ECD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GasSolutions.GasGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GasGuru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GasGuru";
+			};
+			name = Release;
+		};
+		648661742C0B983100A9ECD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GasSolutions.GasGuruUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GasGuru;
+			};
+			name = Debug;
+		};
+		648661752C0B983100A9ECD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GasSolutions.GasGuruUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GasGuru;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		648661432C0B982E00A9ECD1 /* Build configuration list for PBXProject "GasGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6486616B2C0B983100A9ECD1 /* Debug */,
+				6486616C2C0B983100A9ECD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6486616D2C0B983100A9ECD1 /* Build configuration list for PBXNativeTarget "GasGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6486616E2C0B983100A9ECD1 /* Debug */,
+				6486616F2C0B983100A9ECD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648661702C0B983100A9ECD1 /* Build configuration list for PBXNativeTarget "GasGuruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648661712C0B983100A9ECD1 /* Debug */,
+				648661722C0B983100A9ECD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648661732C0B983100A9ECD1 /* Build configuration list for PBXNativeTarget "GasGuruUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648661742C0B983100A9ECD1 /* Debug */,
+				648661752C0B983100A9ECD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64A3AEC72C0BAB9600CA754B /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64A3AECC2C0BAEFA00CA754B /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64A3AEC72C0BAB9600CA754B /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 648661402C0B982E00A9ECD1 /* Project object */;
+}
